@@ -1,6 +1,14 @@
 package main;
 import java.util.Scanner;
 
+/**
+ * Clase Calculadora para hacer calculos sencillos con numeros.
+ * Las operaciones que se pueden realizar en esta versión son: Suma, Resta, Multiplicación y División.
+ * 
+ * @version 1.0 25 Marzo 2024
+ * @author Anto Martinez
+ */
+
 public class Calculadora {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
