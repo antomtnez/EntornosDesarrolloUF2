@@ -14,12 +14,21 @@ public class Calculadora {
 		Scanner scanner = new Scanner(System.in);
 
         System.out.println("Introduce el primer número:");
+        /**
+         * 
+         */
         double num1 = scanner.nextDouble();
 
         System.out.println("Introduce el segundo número:");
+        /**
+         * 
+         */
         double num2 = scanner.nextDouble();
 
         System.out.println("Elige la operación (suma, resta, multiplicación, división):");
+        /**
+         * 
+         */
         String operacion = scanner.next();
 
         switch (operacion) {
@@ -45,18 +54,42 @@ public class Calculadora {
         }
     }
 	
+	/**
+	 * Devuelve la suma de dos numeros double.
+	 * @param a es el primer numero a sumar.
+	 * @param b es el segundo numero a sumar.
+	 * @return El resultado de la suma.
+	 */
 	public static double suma(double a, double b) {
         return a + b;
     }
-
+	
+	/**
+	 * Devuelve la resta de dos numeros double.
+	 * @param a es el primer numero a restar.
+	 * @param b es el segundo numero a restar.
+	 * @return El resultado de la resta.
+	 */
     public static double resta(double a, double b) {
         return a - b;
     }
-
+    
+    /**
+	 * Devuelve la multiplicacion de dos numeros double.
+	 * @param a es el primer numero a multiplicar.
+	 * @param b es el segundo numero a multiplicar.
+	 * @return El resultado de la multiplicacion.
+	 */
     public static double multiplicacion(double a, double b) {
         return a * b;
     }
-
+    
+    /**
+	 * Devuelve la division de dos numeros double.
+	 * @param a es el dividendo.
+	 * @param b es el divisor - b > 0.
+	 * @return el resultado de la suma
+	 */
     public static double division(double a, double b) {
         return a / b;
     }
