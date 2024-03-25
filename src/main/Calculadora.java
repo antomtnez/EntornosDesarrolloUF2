@@ -15,25 +15,42 @@ public class Calculadora {
         String operacion = scanner.next();
 
         switch (operacion) {
-            case "suma":
-                System.out.println("Resultado: " + (num1 + num2));
-                break;
-            case "resta":
-                System.out.println("Resultado: " + (num1 - num2));
-                break;
-            case "multiplicación":
-                System.out.println("Resultado: " + (num1 * num2));
-                break;
-            case "división":
-                if (num2 == 0) {
-                    System.out.println("No se puede dividir por cero.");
-                } else {
-                    System.out.println("Resultado: " + (num1 / num2));
-                }
-                break;
-            default:
-                System.out.println("Operación no reconocida.");
-                break;
+        case "suma":
+            System.out.println("Resultado: " + suma(num1, num2));
+            break;
+        case "resta":
+            System.out.println("Resultado: " + resta(num1, num2));
+            break;
+        case "multiplicación":
+            System.out.println("Resultado: " + multiplicacion(num1, num2));
+            break;
+        case "división":
+            if (num2 == 0) {
+                System.out.println("No se puede dividir por cero.");
+            } else {
+                System.out.println("Resultado: " + division(num1, num2));
+            }
+            break;
+        default:
+            System.out.println("Operación no reconocida.");
+            break;
         }
     }
+	
+	public static double suma(double a, double b) {
+        return a + b;
+    }
+
+    public static double resta(double a, double b) {
+        return a - b;
+    }
+
+    public static double multiplicacion(double a, double b) {
+        return a * b;
+    }
+
+    public static double division(double a, double b) {
+        return a / b;
+    }
 }
+
